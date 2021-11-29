@@ -1,0 +1,6 @@
+[submodule "f1tenth_gym"]
+	path = f1tenth_gym
+	url = git@github.com:f1tenth/f1tenth_gym.git
+[submodule "overtaking"]
+	path = overtaking
+	url = git@github.com:mlab-upenn/overtaking.git
