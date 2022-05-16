@@ -6,8 +6,6 @@ setup(name='gym_monitor',
       author_email='nandan.t@live.com',
       url='https://f1tenth.org',
       install_requires=['gym',
-                        'numba',
                         'numpy',
-                        'pandas',
                         ]
       )
