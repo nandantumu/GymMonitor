@@ -32,11 +32,11 @@ class Monitor:
         for i, evaluation in enumerate(evals):
             if not evaluation:
                 print("Rule {} has failed.".format(self.rules[i].name))
-        return all(evals)
+        return all(evals), evals
 
     def evaluate_end_rollout(self, obs, gym) -> bool:
         evals = [rule.end_rollout(obs, gym) for rule in self.rules]
         for i, evaluation in enumerate(evals):
             if not evaluation:
                 print("Rule {} has failed.".format(self.rules[i].name))
-        return all(evals)
+        return all(evals), evals
